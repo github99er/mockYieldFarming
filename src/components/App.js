@@ -166,6 +166,10 @@ class App extends Component {
                 Gituhb
               </a>
             </p>
+            <p style={{color:"hotpink"}}>
+              CONNECT YOUR META MASK WALLET!
+            
+            </p>
             {content}
           
           </main>
