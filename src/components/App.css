@@ -1,1 +1,38 @@
 /* Styles go here */
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  @import url(https://fonts.googleapis.com/css?family=Advent + Pro:100);
+  html {
+    background: url(https://media1.giphy.com/media/l4FGrjwlaQGS4mplS/200w.webp?cid=ecf05e47d5b01f809a9aa1628b43e6461f7b47d398f202ff&rid=200w.webp)
+      no-repeat center center fixed;
+    background-size: cover;
+  }
+  h1 {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 3em;
+    margin: 0.2em 0.5em;
+  }
+  body {
+    height: 100%;
+  }
+  
+  audio {
+    filter: hotpink(100%);
+    width: 200px;
+    height: 25px;
+    color: pink;
+    background: pink;
+  }
+  .container2 {
+    position: relative;
+  }
+  
+  .topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 18px;
+  }

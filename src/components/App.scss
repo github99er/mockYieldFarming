@@ -1,0 +1,113 @@
+
+
+.container {
+	background: aqua;
+	position: relative;
+	resize: both;
+	overflow: auto;
+	width: 850px;
+	height: 750px;
+}
+
+.browser-frame { 
+	position: relative;
+	padding: 132px 0 55px 0;
+	overflow: hidden;
+	box-shadow: 0 5px 10px hotpink;
+	border-image-slice: 171 57 57 515 fill;
+}
+
+.browser-frame::before {
+	content: "";
+	position: absolute;
+	top: 0;  
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/131442/netscape.png');
+	border-image-slice: 171 57 57 515 fill; 
+	border-image-width: 170px 56px 57px 515px;
+	border-image-outset: 0px 0px 0px 0px; 
+	border-image-repeat: repeat repeat;
+	pointer-events: none;
+}
+
+.center {
+	position: absolute;
+	top: 30px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	
+}
+
+main {
+	padding: 10px 0;
+	background: url(https://media1.giphy.com/media/l0HU841jPUnOYzLpe/giphy.gif?cid=ecf05e47e2e996901cc8f045ea4db127486c557c3eef5ffe&rid=giphy.gif);
+	text-align: center;
+	color: aqua;
+	height: 100%;
+	overflow: auto;
+	text-transform: uppercase;
+	no-repeat: center center fixed;
+  background-size: cover;
+}
+
+.couldnt-do-this-in-the-90s {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	img {
+		width: 60px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin: 0 20px
+	}
+}
+
+h1 { margin: 0;	color: hotpink; }
+
+img {
+	width: 80%;
+	height: auto;
+}
+
+table, td{
+	margin: 20px auto;
+	border: outset 2px hotpink;
+	color: hotpink;
+	padding: 2px;
+}
+td {
+	padding: 3px 10px;
+}
+
+a {
+	color: hotpink;
+}
+
+th{
+	color: aqua;
+}
+
+#drag-handle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 85px;
+}
+
+.resize-handle {
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	right: 0;
+	bottom: 0;
+	top: auto !important;
+	left: auto !important;
+	margin-top: -22px;
+	margin-left: -22px;
+	width: 20px;
+	height: 20px;
+	cursor: nw-resize !important;
+}
